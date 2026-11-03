@@ -24,6 +24,27 @@ python -m streamlit run main.py
 
 Dans l’application principale, importer une image puis cliquer sur **Analyser l’image**. Le prétraitement MobileNetV2 (pixels entre -1 et 1) est sélectionné par défaut. Les noms des classes et le prétraitement doivent correspondre à l’entraînement.
 
+Le fichier `requirements.txt` contient les dépendances des interfaces. Pour exécuter le notebook d’entraînement, installer également `matplotlib` et Jupyter.
+
+## Déploiement sur Streamlit Community Cloud
+
+1. Se connecter à [Streamlit Community Cloud](https://share.streamlit.io/) avec le compte GitHub `ahmed-douyry`.
+2. Autoriser Streamlit à accéder aux dépôts privés si le dépôt n’apparaît pas.
+3. Cliquer sur **Create app**, puis **Yup, I have an app** et renseigner :
+
+   | Paramètre | Valeur |
+   | --- | --- |
+   | Repository | `ahmed-douyry/streamlit-image-classification` |
+   | Branch | `main` |
+   | Main file path | `app.py` |
+   | Python version (Advanced settings) | `3.12` |
+
+4. Cliquer sur **Deploy** et attendre la fin de l’installation.
+
+Les poids et les noms des classes sont déjà dans `model/`. Aucun secret ni téléchargement externe de modèle n’est nécessaire. TensorFlow est installé dans sa version CPU pour l’hébergement.
+
+Le déploiement doit être lancé depuis le compte Streamlit du propriétaire ; le dépôt préparé ne signifie pas que l’application est déjà déployée. Voir la [documentation officielle](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy).
+
 ## Captures des essais
 
 Les captures dans [`docs/screenshots/`](docs/screenshots/) proviennent d’essais réels dans Chrome, le 3 novembre 2026. Les images de chat, chien, voiture et pommes viennent du dossier Téléchargements ; la photo de moto vient de Wikimedia Commons. Les scores affichés sont ceux du modèle et ne constituent pas une mesure de précision sur un jeu de test.
