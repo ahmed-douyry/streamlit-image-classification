@@ -26,7 +26,7 @@ Dans l’application principale, importer une image puis cliquer sur **Analyser 
 
 ## Captures des essais
 
-Les captures dans [`docs/screenshots/`](docs/screenshots/) proviennent d’essais réels dans Chrome, avec des images du dossier Téléchargements, le 3 novembre 2026. Les scores affichés sont ceux du modèle et ne constituent pas une mesure de précision sur un jeu de test.
+Les captures dans [`docs/screenshots/`](docs/screenshots/) proviennent d’essais réels dans Chrome, le 3 novembre 2026. Les images de chat, chien, voiture et pommes viennent du dossier Téléchargements ; la nouvelle photo de banane vient de Wikimedia Commons. Les scores affichés sont ceux du modèle et ne constituent pas une mesure de précision sur un jeu de test.
 
 ![Accueil](docs/screenshots/00-accueil.png)
 
@@ -36,7 +36,7 @@ Les captures dans [`docs/screenshots/`](docs/screenshots/) proviennent d’essai
 | Chien | dog | 100,0 % |
 | Voiture | car | 100,0 % |
 | Pommes | fruit | 61,8 % |
-| Bananes | flower (incorrect) | 99,6 % |
+| Banane (nouvelle photo) | flower (incorrect) | 90,7 % |
 
 ### Chat
 
@@ -54,10 +54,14 @@ Les captures dans [`docs/screenshots/`](docs/screenshots/) proviennent d’essai
 
 ![Classification des pommes : fruit, score de 61,8 %](docs/screenshots/pommes.png)
 
-### Bananes
+### Banane — nouvel essai
 
-![Classification incorrecte des bananes : flower, score de 99,6 %](docs/screenshots/bananes.png)
+![Nouvel essai : banane classée incorrectement comme flower, score de 90,7 %](docs/screenshots/banane-photo.png)
 
-Ces cinq essais concernent `app.py`. L’image des bananes illustre une erreur du modèle malgré un score élevé ; un score élevé ne garantit donc pas une bonne classification.
+La précédente capture des bananes a été remplacée par cet essai sur une autre photo, sans modification du modèle ni du prétraitement MobileNetV2. Catégorie attendue : `fruit` ; prédiction obtenue : `flower` (90,7 %).
+
+Photo téléchargée : [Banana on whitebackground.jpg](https://commons.wikimedia.org/wiki/File:Banana_on_whitebackground.jpg), par Filo gèn', sous licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Le fichier original est conservé sans modification dans [`docs/test-images/banane.jpg`](docs/test-images/banane.jpg). La photo reproduite dans la capture reste sous cette licence.
+
+Ces cinq essais concernent `app.py`. Le nouvel essai de banane illustre une erreur du modèle malgré un score élevé ; un score élevé ne garantit donc pas une bonne classification.
 
 Les prédictions et scores sont enregistrés dans [`results.json`](docs/screenshots/results.json).

@@ -45,13 +45,17 @@
   },
   {
     "name": "bananes",
-    "file": "3d-rendering-a-hand-of-bananas-on-transparent-background-png.png",
+    "file": "docs/test-images/banane.jpg",
     "expected": "fruit",
     "prediction": [
       "Prédiction : flower"
     ],
     "score": [
-      "Score du modèle99.6%"
-    ]
+      "Score du modèle90.7%"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Banana_on_whitebackground.jpg",
+    "author": "Filo gèn'",
+    "license": "CC BY-SA 4.0",
+    "preprocessing": "mobilenet"
   }
 ]
