@@ -1,0 +1,57 @@
+[
+  {
+    "name": "chat",
+    "file": "chat.png",
+    "expected": "cat",
+    "prediction": [
+      "Prédiction : cat"
+    ],
+    "score": [
+      "Score du modèle98.7%"
+    ]
+  },
+  {
+    "name": "chien",
+    "file": "dog\\.png",
+    "expected": "dog",
+    "prediction": [
+      "Prédiction : dog"
+    ],
+    "score": [
+      "Score du modèle100.0%"
+    ]
+  },
+  {
+    "name": "voiture",
+    "file": "voiture.png",
+    "expected": "car",
+    "prediction": [
+      "Prédiction : car"
+    ],
+    "score": [
+      "Score du modèle100.0%"
+    ]
+  },
+  {
+    "name": "pommes",
+    "file": "apple-scalable-graphics-basket-of-apples-generative-ai-free-png.png",
+    "expected": "fruit",
+    "prediction": [
+      "Prédiction : fruit"
+    ],
+    "score": [
+      "Score du modèle61.8%"
+    ]
+  },
+  {
+    "name": "bananes",
+    "file": "3d-rendering-a-hand-of-bananas-on-transparent-background-png.png",
+    "expected": "fruit",
+    "prediction": [
+      "Prédiction : flower"
+    ],
+    "score": [
+      "Score du modèle99.6%"
+    ]
+  }
+]
