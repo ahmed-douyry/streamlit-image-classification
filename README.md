@@ -30,13 +30,33 @@ Les captures dans [`docs/screenshots/`](docs/screenshots/) proviennent d’essai
 
 ![Accueil](docs/screenshots/00-accueil.png)
 
-| Image | Prédiction | Score du modèle | Capture |
-| --- | --- | --- | --- |
-| Chat | cat | 98,7 % | [Voir](docs/screenshots/chat.png) |
-| Chien | dog | 100,0 % | [Voir](docs/screenshots/chien.png) |
-| Voiture | car | 100,0 % | [Voir](docs/screenshots/voiture.png) |
-| Pommes | fruit | 61,8 % | [Voir](docs/screenshots/pommes.png) |
-| Bananes | flower (incorrect) | 99,6 % | [Voir](docs/screenshots/bananes.png) |
+| Image | Prédiction | Score du modèle |
+| --- | --- | --- |
+| Chat | cat | 98,7 % |
+| Chien | dog | 100,0 % |
+| Voiture | car | 100,0 % |
+| Pommes | fruit | 61,8 % |
+| Bananes | flower (incorrect) | 99,6 % |
+
+### Chat
+
+![Classification du chat : cat, score de 98,7 %](docs/screenshots/chat.png)
+
+### Chien
+
+![Classification du chien : dog, score de 100,0 %](docs/screenshots/chien.png)
+
+### Voiture
+
+![Classification de la voiture : car, score de 100,0 %](docs/screenshots/voiture.png)
+
+### Pommes
+
+![Classification des pommes : fruit, score de 61,8 %](docs/screenshots/pommes.png)
+
+### Bananes
+
+![Classification incorrecte des bananes : flower, score de 99,6 %](docs/screenshots/bananes.png)
 
 Ces cinq essais concernent `app.py`. L’image des bananes illustre une erreur du modèle malgré un score élevé ; un score élevé ne garantit donc pas une bonne classification.
 
